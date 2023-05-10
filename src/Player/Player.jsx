@@ -125,7 +125,7 @@ export function Player() {
                 key={index}
                 onClick={() => {
                   setSongs(index);
-                  setIsPlaying(!isPlaying);
+                  setIsPlaying(true);
                   audioRef.current.currentTime = 0;
                   audioRef.current.play();
                 }}
